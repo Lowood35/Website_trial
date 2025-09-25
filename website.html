@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowood Inn | Luxury Stay in Srinagar</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Website images/Dal lake_L15.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .room-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-serif font-bold text-emerald-800">Lowood Inn</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#" class="text-emerald-800 hover:text-emerald-600 px-3 py-2 font-medium">Home</a>
+                        <a href="#rooms" class="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Rooms</a>
+                        <a href="#amenities" class="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Amenities</a>
+                        <a href="#gallery" class="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Gallery</a>
+                        <a href="#contact" class="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Contact</a>
+                        <a href="#book" class="bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-2 rounded-full font-medium transition duration-300">Book Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-emerald-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center text-white">
+        <div class="px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6">Experience Kashmir's Finest</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Nestled in the heart of Srinagar, Lowood Inn offers luxury accommodations at reasonable rates, with a warm and homely atmosphere.</p>
+            <div class="space-x-4">
+                <a href="#book" class="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-3 rounded-full font-medium text-lg inline-block transition duration-300">Book Your Stay</a>
+                <a href="#rooms" class="border-2 border-white hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium text-lg inline-block transition duration-300">Explore Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0" data-aos="fade-right">
+                    <img src = "Website images/Dal lake_L75.jpg" alt="Lowood Inn Exterior" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-serif font-bold text-emerald-800 mb-6">Welcome to Lowood Inn</h2>
+                    <p class="text-gray-600 mb-6">Established in 2004, Lowood Inn offers a peaceful stay just minutes from the iconic Dal Lake. Nestled amidst serene surroundings, the property combines comfort with a homely charm. Guests can enjoy spacious rooms, warm hospitality, and easy access to Srinagar’s local attractions. Perfect for travelers seeking a cozy retreat with modern amenities in the heart of Kashmir.</p>
+                    <p class="text-gray-600 mb-8">Stay just steps away from Srinagar’s most treasured landmarks, including the Mughal Gardens, Tulip Garden, Botanical Garden, Pari Mahal, and Nehru Park.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="wifi" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Free WiFi</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="coffee" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Breakfast Available</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="map-pin" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Prime Location</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="circle" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Shared Parking</span>
+                        </div>
+						<div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="zap" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Power Backup</span>
+                        </div>
+						<div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="briefcase" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Luggage assistance</span>
+                        </div>
+						<div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="heart" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Docter Available</span>
+                        </div>
+						<div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="thermometer" class="text-emerald-700"></i>
+                            </div>
+                            <span class="text-gray-700">Gysers & Heating Blankets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold text-emerald-800 mb-4">Our Accommodations</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Choose from our selection of beautifully appointed rooms and suites, each offering comfort and elegance.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Room 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md room-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/indoor/640x360/10" alt="Premium Double Room" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Premium Double Room</h3>
+                        <p class="text-gray-600 mb-4">Spacious rooms with modern amenities, ideal for couples and solo travelers seeking comfort and style.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-emerald-700 font-bold">₹2,800/night</span>
+                            <a href="#book" class="text-emerald-700 hover:text-emerald-900 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Room 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md room-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/indoor/640x360/11" alt="Executive Suite" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Premium Tripple Bed Room</h3>
+                        <p class="text-gray-600 mb-4">Spacious triple-bed suite with attached bathroom and private kitchen, designed for comfort and convenience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-emerald-700 font-bold">₹3,800/night</span>
+                            <a href="#book" class="text-emerald-700 hover:text-emerald-900 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Room 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md room-card" data-aos="fade-up" data-aos-delay="300">
+					<img src = "Website images/family room pic 1.jpg" alt="Family Suite" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Family Room</h3>
+                        <p class="text-gray-600 mb-4">A spacious room with 4 beds, perfect for families, offering extra comfort and amenities. A private kitchen is also available upon request for an additional charge.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-emerald-700 font-bold">₹6,000/night</span>
+                            <a href="#book" class="text-emerald-700 hover:text-emerald-900 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold text-emerald-800 mb-4">Hotel Amenities</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide exceptional services and facilities to make your stay unforgettable.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover:bg-emerald-50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="zap" class="text-emerald-700"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Power Backup</h3>
+                    <p class="text-gray-600">Power backup available to ensure uninterrupted lighting, TV, Wi-Fi, and device charging.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover:bg-emerald-50 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="monitor" class="text-emerald-700"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Smart Tvs</h3>
+                    <p class="text-gray-600">Modern Smart TVs for endless entertainment at your fingertips.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover:bg-emerald-50 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="wifi" class="text-emerald-700"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Free WiFi</h3>
+                    <p class="text-gray-600">High-speed internet access throughout the property.</p>
+                </div>
+				
+
+				
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover:bg-emerald-50 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-emerald-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="map" class="text-emerald-700"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Assistance & Tour Desk:</h3>
+                    <p class="text-gray-600">With dedicated support from our host and staff, enjoy seamless guidance for sightseeing and curated adventure experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold text-emerald-800 mb-4">Gallery</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A glimpse of the beauty that awaits you at Lowood Inn.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="http://static.photos/nature/320x240/1" alt="Hotel View" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in">
+                <img src="http://static.photos/indoor/320x240/2" alt="Lobby" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+                <img src="http://static.photos/indoor/320x240/3" alt="Restaurant" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                <img src="http://static.photos/nature/320x240/4" alt="Garden" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+                <img src="http://static.photos/indoor/320x240/5" alt="Spa" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in">
+                <img src="http://static.photos/nature/320x240/6" alt="View" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+                <img src="http://static.photos/indoor/320x240/7" alt="Room" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                <img src="http://static.photos/nature/320x240/8" alt="Sunset" class="rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-emerald-800 text-white parallax" style="background-image: url('http://static.photos/nature/1200x630/15');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold mb-4">Guest Reviews</h2>
+                <p class="max-w-2xl mx-auto opacity-90">What our guests say about their experience at Lowood Inn.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/1" alt="Guest" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Rajesh Kumar</h4>
+                            <div class="flex text-yellow-300">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"The location is perfect with stunning views of the mountains. The staff went above and beyond to make our stay comfortable."</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/2" alt="Guest" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <div class="flex text-yellow-300">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"The food was exceptional, especially the traditional Kashmiri dishes. Our room was spacious and beautifully decorated."</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/3" alt="Guest" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Amit Patel</h4>
+                            <div class="flex text-yellow-300">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"The spa treatments were rejuvenating. Perfect place to unwind after exploring Srinagar's beautiful sights."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-emerald-50 rounded-xl p-8 md:p-12 shadow-sm">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl font-serif font-bold text-emerald-800 mb-4">Book Your Stay</h2>
+                        <p class="text-gray-600 mb-6">Experience the magic of Kashmir with our exceptional hospitality. Fill out the form to check availability and book your room.</p>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="phone" class="text-emerald-700"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Have questions?</p>
+                                <a href="tel:+917006905819" class="text-emerald-700 font-bold hover:text-emerald-900">+91 7006905819 </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i data-feather="mail" class="text-emerald-700"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Email us at</p>
+                                <a href="mailto:Lowoodguesthouse35@gmail.com" class="text-emerald-700 font-bold hover:text-emerald-900">Lowoodguesthouse35@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-left">
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="check-in" class="block text-gray-700 mb-1">Check-in</label>
+                                    <input type="date" id="check-in" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                </div>
+                                <div>
+                                    <label for="check-out" class="block text-gray-700 mb-1">Check-out</label>
+                                    <input type="date" id="check-out" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="adults" class="block text-gray-700 mb-1">Adults</label>
+                                    <select id="adults" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4+</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="children" class="block text-gray-700 mb-1">Children</label>
+                                    <select id="children" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="room-type" class="block text-gray-700 mb-1">Room Type</label>
+                                <select id="room-type" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                    <option>Premium Double Room</option>
+                                    <option>Premium Tripple Bed Room</option>
+                                    <option>Family Room</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white py-3 px-6 rounded-lg font-medium transition duration-300">Check Availability</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold text-emerald-800 mb-4">Contact Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We'd love to hear from you. Reach out for reservations or any inquiries.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Get in Touch</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"></textarea>
+                            </div>
+                            <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white py-3 px-6 rounded-lg font-medium transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <div class="h-full bg-white p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Our Location</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-emerald-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i data-feather="map-pin" class="text-emerald-700"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Address</h4>
+                                    <p class="text-gray-600">Boulevard Road, Near Dal Lake<br>Srinagar, Jammu & Kashmir 190001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-emerald-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i data-feather="phone" class="text-emerald-700"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Phone</h4>
+                                    <p class="text-gray-600">+91 70069 05819<br></p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-emerald-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i data-feather="mail" class="text-emerald-700"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                    <p class="text-gray-600">Lowoodguesthouse35@gmail.com<br></p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.036530911313!2d74.817314315222!3d34.12462398058217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1850a1c8a9f3d%3A0x1b3e3a1c3e3e3e3d!2sLowood%20Inn!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Lowood Inn</h3>
+                    <p class="text-emerald-100 mb-4">Ideally located in the heart of Srinagar, just minutes from the city’s main attractions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-emerald-100 hover:text-white">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-emerald-100 hover:text-white">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-emerald-100 hover:text-white">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-emerald-100 hover:text-white">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-emerald-100 hover:text-white">Home</a></li>
+                        <li><a href="#rooms" class="text-emerald-100 hover:text-white">Rooms</a></li>
+                        <li><a href="#amenities" class="text-emerald-100 hover:text-white">Amenities</a></li>
+                        <li><a href="#gallery" class="text-emerald-100 hover:text-white">Gallery</a></li>
+                        <li><a href="#contact" class="text-emerald-100 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Boulevard Road, Near Dal Lake, Srinagar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="w-4 h-4 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>+91 70069 05819</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="w-4 h-4 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Lowoodguesthouse35@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-emerald-100 mb-4">Reach out to us at the provided phone number or email for exclusive offers and personalized assistance.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full text-gray-800 focus:outline-none">
+                        <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 px-4 py-2 rounded-r-lg">
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-emerald-800 mt-12 pt-8 text-center text-emerald-100">
+                <p>&copy; 2023 Lowood Inn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            const mobileMenu = document.querySelector('.md\\:hidden + div');
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
